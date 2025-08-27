@@ -1,17 +1,23 @@
-﻿using System;
-using System.Globalization;
+﻿usingusing System;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        string nome = "João";           //o aquivo string precisa de "" em vez de ''
-        float valorProduto = 29.99f;    //valores decimais precisao ser float em vez de int e também adicionar o f no final
-        char resposta = 'S';            //o aquivo char precisa de '' em vez de ""
+        double a = 0.1;
+        double b = 0.2;
+        double c = 0.3;
 
-        Console.WriteLine($"Nome: {nome}");
-        Console.WriteLine($"Valor do produto: {valorProduto}");
-        Console.WriteLine($"Resposta: {resposta}");
-        Console.WriteLine("\n");
+        double soma = a + b;
+
+        Console.WriteLine("a = " + a);
+        Console.WriteLine("b = " + b);
+        Console.WriteLine("c = " + c);
+        Console.WriteLine("a + b = " + soma);
+
+        // Comparação
+        bool iguais = soma == c;
+        Console.WriteLine("a + b == c ? " + iguais);
     }
 }
+
