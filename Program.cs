@@ -1,23 +1,15 @@
-﻿usingusing System;
+﻿using System;
 
 class Program
 {
     static void Main()
     {
-        double a = 0.1;
-        double b = 0.2;
-        double c = 0.3;
+        string nome = "alface";
+        int quantidadeItens = 2;
+        float preço = 5.99f;
+        bool itemAtivo = true;
 
-        double soma = a + b;
-
-        Console.WriteLine("a = " + a);
-        Console.WriteLine("b = " + b);
-        Console.WriteLine("c = " + c);
-        Console.WriteLine("a + b = " + soma);
-
-        // Comparação
-        bool iguais = soma == c;
-        Console.WriteLine("a + b == c ? " + iguais);
+        Console.WriteLine($"Nome: {nome}\nQuantidade: {quantidadeItens} \nPreço: {preço} \nAtivo: {itemAtivo}\n");
     }
 }
 
