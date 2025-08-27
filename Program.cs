@@ -1,11 +1,11 @@
-using System;
-public class Programa1
-{ 
-    public static void Main()
+﻿using System;
+
+class Program
+{
+    static void Main(string[] args)
     {
-        string nome = "Joao";
-        string sobrenome = " Brandao";
-        string str = nome + sobrenome;
-        Console.WriteLine(str);
+        string nome = Console.ReadLine();
+
+        Console.WriteLine("Bem vindo " + nome);
     }
 }
