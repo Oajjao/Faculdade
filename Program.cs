@@ -4,12 +4,16 @@ class Program
 {
     static void Main()
     {
-        string nome = "alface";
-        int quantidadeItens = 2;
-        float preço = 5.99f;
-        bool itemAtivo = true;
+        Console.Write("Digite sua idade: ");
+        int idade = int.Parse(Console.ReadLine());
 
-        Console.WriteLine($"Nome: {nome}\nQuantidade: {quantidadeItens} \nPreço: {preço} \nAtivo: {itemAtivo}\n");
+        if (idade >= 18)
+        {
+            Console.WriteLine("Você é maior de idade.");
+        }
+        else
+        {
+            Console.WriteLine("Você é menor de idade.");
+        }
     }
 }
-
