@@ -4,16 +4,21 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Digite sua idade: ");
-        int idade = int.Parse(Console.ReadLine());
+        int[] numeros = new int[7];
 
-        if (idade >= 18)
+        // Entrada dos números
+        for (int i = 0; i < 7; i++)
         {
-            Console.WriteLine("Você é maior de idade.");
+            Console.Write($"Digite o {i + 1}º número: ");
+            numeros[i] = int.Parse(Console.ReadLine());
         }
-        else
+
+        Console.WriteLine("\nNúmeros na ordem inversa:");
+
+        // Exibindo na ordem inversa
+        for (int i = 6; i >= 0; i--)
         {
-            Console.WriteLine("Você é menor de idade.");
+            Console.WriteLine(numeros[i]);
         }
     }
 }
